@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EFREI Assistant - RAG</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e61dda8ae2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <img
+          src="https://www.efrei.fr/wp-content/uploads/2022/01/LOGO_EFREI-PRINT_EFREI-WEB.png"
+          alt="EFREI Logo"
+        />
+        <span class="logo-text">Assistant</span>
+      </div>
+      <div class="user-menu">
+        <div class="notification-icon">
+          <i class="fa-solid fa-bell"></i>
+          <span class="notification-count">2</span>
+        </div>
+        <div class="user-avatar">E</div>
+      </div>
+    </header>
+
+    <!-- App Container -->
+    <div class="app-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">Mes conversations</div>
+        <button class="new-chat-btn">
+          <i class="fa-solid fa-plus"></i>
+          Nouvelle conversation
+        </button>
+        <div class="conversations">
+          <div class="conversation-item active">
+            <i class="fa-solid fa-message"></i>
+            <div class="conversation-title">Questions sur l'alternance</div>
+          </div>
+          <div class="conversation-item">
+            <i class="fa-solid fa-message"></i>
+            <div class="conversation-title">Règlement intérieur</div>
+          </div>
+          <div class="conversation-item">
+            <i class="fa-solid fa-message"></i>
+            <div class="conversation-title">Information sur les stages</div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Mobile Overlay -->
+      <div class="mobile-overlay"></div>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Welcome Screen -->
+        <div class="welcome-screen">
+          <img
+            src="https://www.efrei.fr/wp-content/uploads/2022/01/LOGO_EFREI-PRINT_EFREI-WEB.png"
+            alt="EFREI Logo"
+            class="welcome-logo"
+          />
+          <h1 class="welcome-title">Bienvenue sur EFREI Assistant</h1>
+          <p class="welcome-subtitle">
+            Je suis là pour répondre à vos questions sur la documentation de
+            l'EFREI : règlement intérieur, alternances, stages, et plus encore.
+          </p>
+          <div class="suggestion-chips">
+            <div class="suggestion-chip">Comment fonctionne l'alternance ?</div>
+            <div class="suggestion-chip">
+              Quelles sont les règles d'absence ?
+            </div>
+            <div class="suggestion-chip">Comment trouver un stage ?</div>
+            <div class="suggestion-chip">Calendrier des examens</div>
+          </div>
+        </div>
+
+        <!-- Chat Container -->
+        <div class="chat-container">
+          <div class="message assistant-message">
+            <div class="message-avatar assistant-avatar">E</div>
+            <div class="message-wrapper">
+              <div class="message-content">
+                <p>
+                  Bonjour ! Je suis l'assistant EFREI. Comment puis-je vous
+                  aider aujourd'hui ?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="message user-message">
+            <div class="message-avatar user-avatar-chat">U</div>
+            <div class="message-wrapper">
+              <div class="message-content">
+                <p>Comment fonctionne l'alternance à l'EFREI ?</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="message assistant-message">
+            <div class="message-avatar assistant-avatar">E</div>
+            <div class="message-wrapper">
+              <div class="message-content">
+                <p>
+                  À l'EFREI, l'alternance est disponible dès la 3ème année et
+                  jusqu'à la fin du cursus. Le rythme est généralement de 3
+                  semaines en entreprise et 1 semaine à l'école.
+                </p>
+                <p>Pour être éligible, vous devez :</p>
+                <ul>
+                  <li>Avoir validé votre année précédente</li>
+                  <li>Avoir trouvé une entreprise d'accueil</li>
+                  <li>
+                    Faire valider votre mission par le responsable des
+                    alternances
+                  </li>
+                </ul>
+                <div class="sources">
+                  <div class="source-item">
+                    <i class="fa-solid fa-file"></i>
+                    Guide de l'alternance 2024-2025
+                  </div>
+                  <div class="source-item">
+                    <i class="fa-solid fa-file"></i>
+                    Règlement des études - Section 4.2
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-container">
+          <div class="input-wrapper">
+            <textarea
+              class="chat-input"
+              placeholder="Posez votre question..."
+              rows="1"
+            ></textarea>
+            <div class="input-actions">
+              <button class="input-action-btn">
+                <i class="fa-solid fa-image"></i>
+              </button>
+            </div>
+
+            <button class="send-btn">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
