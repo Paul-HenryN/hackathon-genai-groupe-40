@@ -210,6 +210,10 @@ body {
   max-width: 90%;
 }
 
+.message-pending {
+  opacity: 0.6;
+}
+
 .user-message {
   align-self: flex-end;
   flex-direction: row-reverse;
@@ -391,6 +395,11 @@ body {
   display: none;
 }
 
+.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
 /* Welcome Screen */
 .welcome-screen {
   display: flex;
@@ -399,7 +408,7 @@ body {
   justify-content: center;
   padding: 20px;
   text-align: center;
-  padding-block: 5rem;
+  padding-block: 2rem 1rem;
 }
 
 .welcome-logo {
